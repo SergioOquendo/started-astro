@@ -20,7 +20,12 @@
   </div>
   {#if buttonText && buttonLink}
     <div class="flex items-center justify-end px-4 pb-4">
-      <a href={buttonLink} class="text-indigo-500 font-medium">{buttonText}</a>
+      <a
+        href={buttonLink}
+        class="bg-indigo-500 text-white font-medium py-2 px-4 hover:bg-indigo-600 transition duration-200 each-in-out rounded-full"
+      >
+        {buttonText}
+      </a>
     </div>
   {/if}
 </div>
